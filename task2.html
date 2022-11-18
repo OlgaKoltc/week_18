@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="smallcontainer">
+        <div class="formcontainer">
+          <div class="title">
+            <div class="title__h2">Google</div>
+            <div class="title__h1">Создайте аккаунт Google</div>
+          </div>
+          <div class="form" novalidate>
+            <div class="form__names">
+            <input class="name" type="text" id="name" placeholder="* Имя" required/>
+            <input class="name" type="text" id="surname" placeholder="Фамилия"/>
+            <input
+              type="email"
+              id="login"
+              placeholder="@gmail.com"/>
+            <div class="form__comment">
+              Можно использовать буквы латинского алфавита, цифры и точки.
+            </div></div>
+            <a class="form__a" href="#">
+              Использовать текущий адрес электронной почты</a
+            >
+            <div class="form__passwords">
+              <input class="password" id="password1" placeholder="Пароль"/>
+              <input
+                class="password"
+                id="password2"
+                placeholder="Подтвердить"/>
+            
+            <div class="form__comment">
+              Пароль должен содержать не менее восьми знаков, включать буквы,
+              цифры и специальные символы
+            </div>
+            <input type="checkbox" id="showPassword" />Показать пароль
+          </div></div>
+          <div class="btn">
+            <button type="button">Войти</button>
+            <button type="button">Далее</button>
+          </div>
+        </div>
+
+        <div class="container_logo">
+            <div id="errorsInfo"></div>
+          <img
+            class="logo"
+            src="./account.svg" alt="logo"
+          />
+
+          <div class="logo__comment">Один аккаунт - для всех сервисов Google</div>
+        </div>
+      </div>
+      <div class="terms">
+        <select name="lang" id="lang">
+          <option lang="russian" value="russian">Русский</option>
+          <option lang="english" value="english">English</option>
+        </select>
+        <div class="terms__a">
+          <a href="#">Справка</a>
+          <a href="#">Конфидициальность</a>
+          <a href="#">Условия</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="./task2.js"></script>
+  </body>
+</html>
